@@ -1,5 +1,7 @@
 package cn.humblecodeukco.test.leetcode;
 
+import cn.humblecodeukco.test.DataStructure.ListNode;
+
 /**
  * @Author lyr
  * @Date 2020/10/7 12:28
@@ -10,14 +12,6 @@ public class MergeTwoOrderLinkedLists {
     public static void main(String[] args) {
 
     }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) {this.val = val;}
-    ListNode(int val, ListNode next) {this.val = val; this.next = next;}
 }
 
 // 递归
