@@ -6,7 +6,7 @@ import cn.humblecodeukco.test.DataStructure.ListNode;
  * @Author lyr
  * @Date 2020/10/10 10:23
  * @Version 1.0
- * @Description
+ * @Description JZ16, 25
  */
 public class MergeTwoOrderLinkedList {
     public static void main(String[] args) {
