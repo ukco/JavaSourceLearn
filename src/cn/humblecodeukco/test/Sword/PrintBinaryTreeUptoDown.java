@@ -22,10 +22,10 @@ class PrintBinaryTreeUptoDownSolution {
         if (pRoot == null) return result;
 
         Queue<TreeNode> layer = new LinkedList<>();
+        ArrayList<Integer> layerList = new ArrayList<>();
         layer.offer(pRoot);
         int start = 0, end = 1;
         while (!layer.isEmpty()) {
-            ArrayList<Integer> layerList = new ArrayList<>();
             TreeNode pNode = layer.poll();
             layerList.add(pNode.val);
             start++;
@@ -35,6 +35,7 @@ class PrintBinaryTreeUptoDownSolution {
                 end = layer.size();
                 start = 0;
                 result.add(layerList);
+                layerList = new ArrayList<>();
             }
         }
         return result;
