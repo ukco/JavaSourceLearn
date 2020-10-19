@@ -30,6 +30,7 @@ public class MinStack {
     }
 
     public int top() {
+
         return xStack.peek();
     }
 
