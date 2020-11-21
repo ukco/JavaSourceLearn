@@ -165,7 +165,7 @@ public class CorbaMessageMediatorImpl
     protected boolean _executePIInResponseConstructor = false;
 
     //
-    // Client-side constructor.
+    // TalkClient-side constructor.
     //
 
     public CorbaMessageMediatorImpl(ORB orb,
@@ -1923,7 +1923,7 @@ public class CorbaMessageMediatorImpl
         // NOTE: We do not trap ThreadDeath above Throwable.
         // There is no reason to stop the thread.  It is
         // just a worker thread.  The ORB never throws
-        // ThreadDeath.  Client code may (e.g., in ServantManagers,
+        // ThreadDeath.  TalkClient code may (e.g., in ServantManagers,
         // interceptors, or servants) but that should not
         // effect the ORB threads.  So it is just handled
         // generically.

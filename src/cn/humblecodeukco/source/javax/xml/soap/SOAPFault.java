@@ -56,9 +56,9 @@ public interface SOAPFault extends SOAPBodyElement {
      * <PRE>
      * SOAPEnvelope se = ...;
      * // Create a qualified name in the SOAP namespace with a localName
-     * // of "Client". Note that prefix parameter is optional and is null
+     * // of "TalkClient". Note that prefix parameter is optional and is null
      * // here which causes the implementation to use an appropriate prefix.
-     * Name qname = se.createName("Client", null,
+     * Name qname = se.createName("TalkClient", null,
      *                            SOAPConstants.URI_NS_SOAP_ENVELOPE);
      * SOAPFault fault = ...;
      * fault.setFaultCode(qname);

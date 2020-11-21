@@ -44,7 +44,7 @@ import java.awt.Insets;
  * The <code>JComponent</code> class
  * invokes methods from this class in order to delegate operations
  * (painting, layout calculations, etc.) that may vary depending on the
- * look and feel installed.  <b>Client programs should not invoke methods
+ * look and feel installed.  <b>TalkClient programs should not invoke methods
  * on this class directly.</b>
  *
  * @see javax.swing.JComponent

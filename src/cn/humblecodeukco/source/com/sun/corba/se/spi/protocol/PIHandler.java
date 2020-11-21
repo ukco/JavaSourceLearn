@@ -98,7 +98,7 @@ public interface PIHandler extends Closeable {
 
     /*
      *****************
-     * Client PI hooks
+     * TalkClient PI hooks
      *****************/
 
     /**

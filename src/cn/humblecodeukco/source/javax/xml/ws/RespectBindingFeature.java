@@ -63,7 +63,7 @@ import javax.xml.ws.soap.AddressingFeature;
  *  that JAX-WS runtime MUST behave appropriately based on whether it is
  *  on the client or server:
  *  <UL>
- *    <li>Client: runtime MUST throw a
+ *    <li>TalkClient: runtime MUST throw a
  *  {@link WebServiceException} no sooner than when one of the methods
  *  above is invoked but no later than the first invocation of an endpoint
  *  operation.

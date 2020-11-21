@@ -172,7 +172,7 @@ import java.io.File;
  * By default, the Marshaller will use UTF-8 encoding when generating XML data
  * to a <tt>java.io.OutputStream</tt>, or a <tt>java.io.Writer</tt>.  Use the
  * {@link #setProperty(String,Object) setProperty} API to change the output
- * encoding used during these marshal operations.  Client applications are
+ * encoding used during these marshal operations.  TalkClient applications are
  * expected to supply a valid character encoding name as defined in the
  * <a href="http://www.w3.org/TR/2000/REC-xml-20001006#charencoding">W3C XML 1.0
  * Recommendation</a> and supported by your Java Platform</a>.
@@ -182,7 +182,7 @@ import java.io.File;
  * <b>Validation and Well-Formedness</b><br>
  * <blockquote>
  * <p>
- * Client applications are not required to validate the Java content tree prior
+ * TalkClient applications are not required to validate the Java content tree prior
  * to calling any of the marshal API's.  Furthermore, there is no requirement
  * that the Java content tree be valid with respect to its original schema in
  * order to marshal it back into XML data.  Different JAXB Providers will

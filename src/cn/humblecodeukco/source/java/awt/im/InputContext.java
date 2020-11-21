@@ -280,7 +280,7 @@ public class InputContext {
      * for this component is discarded.
      * If no input methods are available, then this method has no effect.
      *
-     * @param client Client component
+     * @param client TalkClient component
      * @exception NullPointerException if <code>client</code> is null
      */
     public void removeNotify(Component client) {

@@ -58,7 +58,7 @@ import javax.crypto.SecretKey;
  * object is reset to its initialized state.
  *
  * <p>Implementations are free to implement the Cloneable interface.
- * Client applications can test cloneability by attempting cloning
+ * TalkClient applications can test cloneability by attempting cloning
  * and catching the CloneNotSupportedException:
  *
  * <pre>{@code

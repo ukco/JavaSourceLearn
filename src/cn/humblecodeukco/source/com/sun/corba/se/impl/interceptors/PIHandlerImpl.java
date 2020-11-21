@@ -324,7 +324,7 @@ public class PIHandlerImpl implements PIHandler
 
     /*
      *****************
-     * Client PI hooks
+     * TalkClient PI hooks
      *****************/
 
     public void disableInterceptorsThisThread() {
@@ -814,7 +814,7 @@ public class PIHandlerImpl implements PIHandler
     }
 
     /**
-     * Convenience method to determine whether Client PI is enabled
+     * Convenience method to determine whether TalkClient PI is enabled
      * for requests on this thread.
      */
     private boolean isClientPIEnabledForThisThread() {

@@ -1553,7 +1553,7 @@ public abstract class JComponent extends Container implements Serializable,
      * must be displayable, visible, and focusable for the request to be
      * granted.
      * <p>
-     * This method is intended for use by focus implementations. Client code
+     * This method is intended for use by focus implementations. TalkClient code
      * should not use this method; instead, it should use
      * <code>requestFocusInWindow()</code>.
      *

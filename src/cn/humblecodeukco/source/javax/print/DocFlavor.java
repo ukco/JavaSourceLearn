@@ -66,7 +66,7 @@ import java.io.Serializable;
  * the actual print data.
  * <P>
  * <HR>
- * <H3>Client Formatted Print Data</H3>
+ * <H3>TalkClient Formatted Print Data</H3>
  * There are two broad categories of print data, client formatted print data
  * and service formatted print data.
  * <P>

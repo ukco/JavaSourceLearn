@@ -528,7 +528,7 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
                     this,
                     savedConnectionId,
                     clientNotifSeqNo++,
-                    "Client has been closed",
+                    "TalkClient has been closed",
                     null);
             sendNotification(closedNotif);
         }

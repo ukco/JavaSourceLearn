@@ -46,7 +46,7 @@ public interface FlavorTable extends FlavorMap {
      * will be sorted from best native to worst. That is, the first native will
      * best reflect data in the specified flavor to the underlying native
      * platform. The returned <code>List</code> is a modifiable copy of this
-     * <code>FlavorTable</code>'s internal data. Client code is free to modify
+     * <code>FlavorTable</code>'s internal data. TalkClient code is free to modify
      * the <code>List</code> without affecting this object.
      *
      * @param flav the <code>DataFlavor</code> whose corresponding natives
@@ -66,7 +66,7 @@ public interface FlavorTable extends FlavorMap {
      * <code>DataFlavor</code> will best reflect data in the specified
      * native to a Java application. The returned <code>List</code> is a
      * modifiable copy of this <code>FlavorTable</code>'s internal data.
-     * Client code is free to modify the <code>List</code> without affecting
+     * TalkClient code is free to modify the <code>List</code> without affecting
      * this object.
      *
      * @param nat the native whose corresponding <code>DataFlavor</code>s

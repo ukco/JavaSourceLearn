@@ -130,7 +130,7 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
     protected Component labelFor = null;
 
     /**
-     * Client property key used to determine what label is labeling the
+     * TalkClient property key used to determine what label is labeling the
      * component.  This is generally not used by labels, but is instead
      * used by components such as text areas that are being labeled by
      * labels.  When the labelFor property of a label is set, it will

@@ -265,7 +265,7 @@ public class ORBConfiguratorImpl implements ORBConfigurator {
 
 
         //
-        // Client and Server side setup.
+        // TalkClient and Server side setup.
         //
 
         od.getSocketFactory().setORB(orb);

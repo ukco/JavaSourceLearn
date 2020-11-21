@@ -37,7 +37,7 @@ import java.util.Locale;
  * are partially compliant where possible.
  * <p>
  * To use a method which takes an inner class type, pass a reference to
- * one of the constant fields of the inner class. Client code cannot create
+ * one of the constant fields of the inner class. TalkClient code cannot create
  * new instances of the inner class types because none of those classes
  * has a public constructor. For example, to set the color state to
  * monochrome, use the following code:

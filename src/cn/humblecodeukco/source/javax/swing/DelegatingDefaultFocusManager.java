@@ -51,7 +51,7 @@ final class DelegatingDefaultFocusManager extends DefaultFocusManager {
     }
 
     // Legacy methods which first appeared in javax.swing.FocusManager.
-    // Client code is most likely to invoke these methods.
+    // TalkClient code is most likely to invoke these methods.
 
     public void processKeyEvent(Component focusedComponent, KeyEvent e) {
         delegate.processKeyEvent(focusedComponent, e);

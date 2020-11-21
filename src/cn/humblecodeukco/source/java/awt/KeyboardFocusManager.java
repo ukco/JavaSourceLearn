@@ -1743,7 +1743,7 @@ public abstract class KeyboardFocusManager
      * explicitly re-registered via a call to
      * <code>addKeyEventDispatcher</code>. If no other KeyEventDispatchers are
      * registered, implementations are free to return null or a List of length
-     * 0. Client code should not assume one behavior over another, nor should
+     * 0. TalkClient code should not assume one behavior over another, nor should
      * it assume that the behavior, once established, will not change.
      *
      * @return a possibly null or empty List of KeyEventDispatchers
@@ -1833,7 +1833,7 @@ public abstract class KeyboardFocusManager
      * List. The List will not include this KeyboardFocusManager unless it was
      * explicitly added via a call to <code>addKeyEventPostProcessor</code>. If
      * no KeyEventPostProcessors are registered, implementations are free to
-     * return null or a List of length 0. Client code should not assume one
+     * return null or a List of length 0. TalkClient code should not assume one
      * behavior over another, nor should it assume that the behavior, once
      * established, will not change.
      *
@@ -1936,7 +1936,7 @@ public abstract class KeyboardFocusManager
     /**
      * Redispatches an AWTEvent in such a way that the AWT event dispatcher
      * will not recursively request that the KeyboardFocusManager, or any
-     * installed KeyEventDispatchers, dispatch the event again. Client
+     * installed KeyEventDispatchers, dispatch the event again. TalkClient
      * implementations of <code>dispatchEvent</code> and client-defined
      * KeyEventDispatchers must call <code>redispatchEvent(target, e)</code>
      * instead of <code>target.dispatchEvent(e)</code> to dispatch an event.

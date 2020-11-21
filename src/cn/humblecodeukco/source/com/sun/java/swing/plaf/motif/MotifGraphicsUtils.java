@@ -48,7 +48,7 @@ import javax.swing.text.View;
 
 public class MotifGraphicsUtils implements SwingConstants
 {
-    /* Client Property keys for text and accelerator text widths */
+    /* TalkClient Property keys for text and accelerator text widths */
     private static final String MAX_ACC_WIDTH  =  "maxAccWidth";
 
     /**

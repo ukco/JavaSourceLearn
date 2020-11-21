@@ -30,10 +30,10 @@ package com.sun.corba.se.spi.protocol ;
 // - BEFORE_RESPONSE means that the retry is caused by
 //   something that happened BEFORE the message was sent: either
 //   an exception from the SocketFactory, or one from the
-//   Client side send_request interceptor point.
+//   TalkClient side send_request interceptor point.
 // - AFTER_RESPONSE means that the retry is a result either of the
 //   request sent to the server (from the response), or from the
-//   Client side receive_xxx interceptor point.
+//   TalkClient side receive_xxx interceptor point.
 public enum RetryType {
     NONE( false ),
     BEFORE_RESPONSE( true ),

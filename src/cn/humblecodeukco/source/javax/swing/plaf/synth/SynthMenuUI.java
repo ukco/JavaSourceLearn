@@ -125,7 +125,7 @@ public class SynthMenuUI extends BasicMenuUI
     @Override
     public void uninstallUI(JComponent c) {
         super.uninstallUI(c);
-        // Remove values from the parent's Client Properties.
+        // Remove values from the parent's TalkClient Properties.
         JComponent p = MenuItemLayoutHelper.getMenuItemParent((JMenuItem) c);
         if (p != null) {
             p.putClientProperty(

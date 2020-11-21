@@ -293,7 +293,7 @@ public class RequestImpl
         org.omg.CORBA.portable.Delegate delegate = StubAdapter.getDelegate(
             _target ) ;
 
-        // Initiate Client Portable Interceptors.  Inform the PIHandler that
+        // Initiate TalkClient Portable Interceptors.  Inform the PIHandler that
         // this is a DII request so that it knows to ignore the second
         // inevitable call to initiateClientPIRequest in createRequest.
         // Also, save the RequestImpl object for later use.

@@ -275,7 +275,7 @@ abstract public class HttpURLConnection extends URLConnection {
      * <li> 1xx: Informational
      * <li> 2xx: Success
      * <li> 3xx: Redirection
-     * <li> 4xx: Client Error
+     * <li> 4xx: TalkClient Error
      * <li> 5xx: Server Error
      * </ul>
      */

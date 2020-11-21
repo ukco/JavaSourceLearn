@@ -51,7 +51,7 @@ public abstract class FocusManager extends DefaultKeyboardFocusManager {
      * This field is obsolete, and its use is discouraged since its
      * specification is incompatible with the 1.4 focus APIs.
      * The current FocusManager is no longer a property of the UI.
-     * Client code must query for the current FocusManager using
+     * TalkClient code must query for the current FocusManager using
      * <code>KeyboardFocusManager.getCurrentKeyboardFocusManager()</code>.
      * See the Focus Specification for more information.
      *

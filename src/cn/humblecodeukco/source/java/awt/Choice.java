@@ -223,7 +223,7 @@ public class Choice extends Component implements ItemSelectable, Accessible {
     /**
      * Inserts an item to this <code>Choice</code>,
      * but does not invalidate the <code>Choice</code>.
-     * Client methods must provide their own synchronization before
+     * TalkClient methods must provide their own synchronization before
      * invoking this method.
      * @param item the item to be added
      * @param index the new item position
@@ -333,7 +333,7 @@ public class Choice extends Component implements ItemSelectable, Accessible {
     /**
      * Removes an item from the <code>Choice</code> at the
      * specified position, but does not invalidate the <code>Choice</code>.
-     * Client methods must provide their
+     * TalkClient methods must provide their
      * own synchronization before invoking this method.
      * @param      position   the position of the item
      */

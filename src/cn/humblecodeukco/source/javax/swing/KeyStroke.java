@@ -41,7 +41,7 @@ import java.awt.event.KeyEvent;
  * interested in, those keystrokes you care about automatically initiate
  * actions on the Components with which they are registered.
  * <p>
- * KeyStrokes are immutable, and are intended to be unique. Client code cannot
+ * KeyStrokes are immutable, and are intended to be unique. TalkClient code cannot
  * create a KeyStroke; a variant of <code>getKeyStroke</code> must be used
  * instead. These factory methods allow the KeyStroke implementation to cache
  * and share instances efficiently.

@@ -13,7 +13,7 @@ package org.omg.PortableInterceptor;
    * Request Information, accessible to Interceptors.
    * <p>
    * Each interception point is given an object through which the 
-   * Interceptor can access request information. Client-side and server-side 
+   * Interceptor can access request information. TalkClient-side and server-side
    * interception points are concerned with different information, so there 
    * are two information objects: <code>ClientRequestInfo</code> is passed 
    * to the client-side interception points and <code>ServerRequestInfo</code>

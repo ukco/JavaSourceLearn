@@ -1,4 +1,4 @@
-package cn.humblecodeukco.test;
+package cn.humblecodeukco.test.scripts;
 
 import java.util.ArrayList;
 import java.util.List;

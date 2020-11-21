@@ -168,7 +168,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
 
     /**
      *
-     * Client that owns the service ticket
+     * TalkClient that owns the service ticket
      *
      * @serial
      */
@@ -284,7 +284,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
         this.asn1Encoding = asn1Encoding.clone();
 
         if (client == null)
-           throw new IllegalArgumentException("Client name in ticket"
+           throw new IllegalArgumentException("TalkClient name in ticket"
                                               + " cannot be null");
         this.client = client;
 
@@ -653,7 +653,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
         }
         return ("Ticket (hex) = " + "\n" +
                  (new HexDumpEncoder()).encodeBuffer(asn1Encoding) + "\n" +
-                "Client Principal = " + client.toString() + "\n" +
+                "TalkClient Principal = " + client.toString() + "\n" +
                 "Server Principal = " + server.toString() + "\n" +
                 "Session Key = " + sessionKey.toString() + "\n" +
                 "Forwardable Ticket " + flags[FORWARDABLE_TICKET_FLAG] + "\n" +
@@ -667,7 +667,7 @@ public class KerberosTicket implements Destroyable, Refreshable,
                 "Start Time = " + String.valueOf(startTime) + "\n" +
                 "End Time = " + endTime.toString() + "\n" +
                 "Renew Till = " + String.valueOf(renewTill) + "\n" +
-                "Client Addresses " +
+                "TalkClient Addresses " +
                 (clientAddresses == null ? " Null " : caddrBuf.toString() +
                 (proxy == null ? "" : "\nwith a proxy ticket") +
                 "\n"));

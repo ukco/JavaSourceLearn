@@ -189,7 +189,7 @@ public class SocketOrChannelConnectionImpl
         setUseWorkerThreadForEvent(useWorkerThread);
     }
 
-    // Client constructor.
+    // TalkClient constructor.
     public SocketOrChannelConnectionImpl(ORB orb,
                                          CorbaContactInfo contactInfo,
                                          boolean useSelectThreadToWait,
@@ -226,7 +226,7 @@ public class SocketOrChannelConnectionImpl
         state = OPENING;
     }
 
-    // Client-side convenience.
+    // TalkClient-side convenience.
     public SocketOrChannelConnectionImpl(ORB orb,
                                          CorbaContactInfo contactInfo,
                                          String socketType,

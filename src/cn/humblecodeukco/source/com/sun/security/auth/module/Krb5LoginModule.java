@@ -1056,7 +1056,7 @@ public class Krb5LoginModule implements LoginModule {
 
             if (isInitiator && (cred == null)) {
                 succeeded = false;
-                throw new LoginException("Null Client Credential");
+                throw new LoginException("Null TalkClient Credential");
             }
 
             if (subject.isReadOnly()) {

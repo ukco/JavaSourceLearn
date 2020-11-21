@@ -91,7 +91,7 @@ public abstract class RMISocketFactory
         implements RMIClientSocketFactory, RMIServerSocketFactory
 {
 
-    /** Client/server socket factory to be used by RMI runtime */
+    /** TalkClient/server socket factory to be used by RMI runtime */
     private static RMISocketFactory factory = null;
     /** default socket factory used by this RMI implementation */
     private static RMISocketFactory defaultSocketFactory;

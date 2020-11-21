@@ -362,7 +362,7 @@ public abstract class RMIServerImpl implements Closeable, RMIServer {
 
         if (debug) logger.trace("clientClosed", "sending notif");
         connServer.connectionClosed(client.getConnectionId(),
-                                    "Client connection closed", null);
+                                    "TalkClient connection closed", null);
 
         if (debug) logger.trace("clientClosed","done");
     }

@@ -204,7 +204,7 @@ public class InterceptorInvoker {
 
     /*
      **********************************************************************
-     * Client Interceptor invocation
+     * TalkClient Interceptor invocation
      **********************************************************************/
 
     /**
@@ -217,7 +217,7 @@ public class InterceptorInvoker {
             try {
                 // Make a a fresh slot table available to TSC in case
                 // interceptors need to make out calls.
-                // Client's TSC is now RSC via RequestInfo.
+                // TalkClient's TSC is now RSC via RequestInfo.
                 current.pushSlotTable( );
                 info.setPICurrentPushed( true );
                 info.setCurrentExecutionPoint( info.EXECUTION_POINT_STARTING );

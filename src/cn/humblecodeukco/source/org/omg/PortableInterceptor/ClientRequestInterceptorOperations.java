@@ -10,7 +10,7 @@ package org.omg.PortableInterceptor;
 
 
 /**
-   * Client-side request interceptor.
+   * TalkClient-side request interceptor.
    * <p>
    * A request Interceptor is designed to intercept the flow of a 
    * request/reply sequence through the ORB at specific points so that 

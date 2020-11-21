@@ -103,7 +103,7 @@ package javax.xml.bind;
  *        </dd>
  *
  *        <dt>Implement and register a custom event handler</dt>
- *        <dd>Client applications that require sophisticated event processing
+ *        <dd>TalkClient applications that require sophisticated event processing
  *            can implement the <tt>ValidationEventHandler</tt> interface and
  *            register it with the <tt>Unmarshaller</tt> and/or
  *            <tt>Validator</tt>.
@@ -132,7 +132,7 @@ package javax.xml.bind;
  * FATAL_ERROR to indicate that the unmarshal, validate, or marshal operations
  * should be terminated.  The default event handler and
  * <tt>ValidationEventCollector</tt> utility class must terminate processing
- * after being notified of a fatal error.  Client applications that supply their
+ * after being notified of a fatal error.  TalkClient applications that supply their
  * own <tt>ValidationEventHandler</tt> should also terminate processing after
  * being notified of a fatal error.  If not, unexpected behaviour may occur.
  * </blockquote>
@@ -197,7 +197,7 @@ public interface Validator {
     /**
      * Validate the Java content tree starting at <tt>subrootObj</tt>.
      * <p>
-     * Client applications can use this method to validate Java content trees
+     * TalkClient applications can use this method to validate Java content trees
      * on-demand at runtime.  This method can be used to validate any arbitrary
      * subtree of the Java content tree.  Global constraint checking <b>will not
      * </b> be performed as part of this operation (i.e. ID/IDREF constraints).
@@ -220,7 +220,7 @@ public interface Validator {
     /**
      * Validate the Java content tree rooted at <tt>rootObj</tt>.
      * <p>
-     * Client applications can use this method to validate Java content trees
+     * TalkClient applications can use this method to validate Java content trees
      * on-demand at runtime.  This method is used to validate an entire Java
      * content tree.  Global constraint checking <b>will</b> be performed as
      * part of this operation (i.e. ID/IDREF constraints).

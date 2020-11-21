@@ -161,7 +161,7 @@ import java.io.InputStream;
  * to a <tt>java.io.OutputStream</tt> or a <tt>java.io.Writer</tt>.  The
  * marshalling process can alternatively produce SAX2 event streams to a
  * registered <tt>ContentHandler</tt> or produce a DOM Node object.
- * Client applications have control over the output encoding as well as
+ * TalkClient applications have control over the output encoding as well as
  * whether or not to marshal the XML data as a complete document or
  * as a fragment.
  *

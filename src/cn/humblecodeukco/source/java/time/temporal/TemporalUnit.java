@@ -82,7 +82,7 @@ import java.time.chrono.ChronoZonedDateTime;
  * Further units are supplied in {@link IsoFields}.
  * Units can also be written by application code by implementing this interface.
  * <p>
- * The unit works using double dispatch. Client code calls methods on a date-time like
+ * The unit works using double dispatch. TalkClient code calls methods on a date-time like
  * {@code LocalDateTime} which check if the unit is a {@code ChronoUnit}.
  * If it is, then the date-time must handle it.
  * Otherwise, the method call is re-dispatched to the matching method in this interface.

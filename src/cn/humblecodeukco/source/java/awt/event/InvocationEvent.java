@@ -37,7 +37,7 @@ import java.awt.AWTEvent;
  * than declaring a new class and defining <code>dispatch()</code>.<p>
  *
  * Instances of this class are placed on the <code>EventQueue</code> by calls
- * to <code>invokeLater</code> and <code>invokeAndWait</code>. Client code
+ * to <code>invokeLater</code> and <code>invokeAndWait</code>. TalkClient code
  * can use this fact to write replacement functions for <code>invokeLater
  * </code> and <code>invokeAndWait</code> without writing special-case code
  * in any <code>AWTEventListener</code> objects.

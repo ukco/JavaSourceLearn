@@ -51,7 +51,7 @@ import sun.swing.SwingUtilities2;
 public class MetalBorders {
 
     /**
-     * Client property indicating the button shouldn't provide a rollover
+     * TalkClient property indicating the button shouldn't provide a rollover
      * indicator. Only used with the Ocean theme.
      */
     static Object NO_BUTTON_ROLLOVER =

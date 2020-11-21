@@ -52,9 +52,9 @@ import java.lang.reflect.Field;
  * during the action for an exact match.
  * <p>
  * <code>AWTKeyStrokes</code> are immutable, and are intended
- * to be unique. Client code should never create an
+ * to be unique. TalkClient code should never create an
  * <code>AWTKeyStroke</code> on its own, but should instead use
- * a variant of <code>getAWTKeyStroke</code>. Client use of these factory
+ * a variant of <code>getAWTKeyStroke</code>. TalkClient use of these factory
  * methods allows the <code>AWTKeyStroke</code> implementation
  * to cache and share instances efficiently.
  *

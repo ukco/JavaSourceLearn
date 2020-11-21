@@ -72,7 +72,7 @@ class StreamSpliterators {
         final PipelineHelper<P_OUT> ph;
 
         /**
-         * Supplier for the source spliterator.  Client provides either a
+         * Supplier for the source spliterator.  TalkClient provides either a
          * spliterator or a supplier.
          */
         private Supplier<Spliterator<P_IN>> spliteratorSupplier;

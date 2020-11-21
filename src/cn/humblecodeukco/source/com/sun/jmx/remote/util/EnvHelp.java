@@ -184,7 +184,7 @@ public class EnvHelp {
     }
 
     /**
-     * Get the Connector Client default class loader.
+     * Get the Connector TalkClient default class loader.
      * <p>
      * Returns:
      * <p>
@@ -198,7 +198,7 @@ public class EnvHelp {
      * </li>
      * </ul>
      * <p>
-     * Usually a Connector Client will call
+     * Usually a Connector TalkClient will call
      * <pre>
      * ClassLoader dcl = EnvHelp.resolveClientClassLoader(env);
      * </pre>

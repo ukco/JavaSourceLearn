@@ -43,7 +43,7 @@ public interface FlavorMap {
      * Returns a <code>Map</code> of the specified <code>DataFlavor</code>s to
      * their corresponding <code>String</code> native. The returned
      * <code>Map</code> is a modifiable copy of this <code>FlavorMap</code>'s
-     * internal data. Client code is free to modify the <code>Map</code>
+     * internal data. TalkClient code is free to modify the <code>Map</code>
      * without affecting this object.
      *
      * @param flavors an array of <code>DataFlavor</code>s which will be the
@@ -60,7 +60,7 @@ public interface FlavorMap {
      * Returns a <code>Map</code> of the specified <code>String</code> natives
      * to their corresponding <code>DataFlavor</code>. The returned
      * <code>Map</code> is a modifiable copy of this <code>FlavorMap</code>'s
-     * internal data. Client code is free to modify the <code>Map</code>
+     * internal data. TalkClient code is free to modify the <code>Map</code>
      * without affecting this object.
      *
      * @param natives an array of <code>String</code>s which will be the
