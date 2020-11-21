@@ -32,7 +32,7 @@ class PathSumSolution {
         while (!queNode.isEmpty()) {
             TreeNode now = queNode.poll();
             int temp = queVal.poll();
-            if (now.left != null && now.right != null) {
+            if (now.left == null && now.right == null) {
                 if (temp == sum) {
                     return true;
                 }
