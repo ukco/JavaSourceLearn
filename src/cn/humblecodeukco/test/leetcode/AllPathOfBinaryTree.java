@@ -44,7 +44,7 @@ class AllPathOfBinaryTreeSolution {
 }*/
 
 // StringBuilder
-/*class Solution {
+/*class Solution1 {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> pathList = new LinkedList<>();
         if (root == null) return pathList;
