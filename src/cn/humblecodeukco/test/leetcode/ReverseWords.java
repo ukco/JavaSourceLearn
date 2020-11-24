@@ -79,9 +79,9 @@ class ReverseSolution {
     public StringBuilder trimSpaces(String s) {
         int left = 0, right = s.length() - 1;
         // 去掉字符串开头的空白字符
-        while (left <= right && s.charAt(left) == ' ') ++left;
+        while (left <= right && s.charAt(left) == ' ') { ++left; }
         // 去掉字符串末尾的空白字符
-        while (left <= right && s.charAt(right) == ' ') --right;
+        while (left <= right && s.charAt(right) == ' ') { --right; }
 
         // 将字符串间多余的空白字符去除
         StringBuilder sb = new StringBuilder();
@@ -110,7 +110,7 @@ class ReverseSolution {
 
         while (start < n) {
             // 循环至单词的末尾
-            while (end < n && sb.charAt(end) != ' ') ++end;
+            while (end < n && sb.charAt(end) != ' ') { ++end; }
             // 翻转单词
             reverse(sb, start, end - 1);
             // 更新start，去找下一个单词
