@@ -38,6 +38,8 @@ public class Main {
         else if (mid > avg) { return 1; }
         else { return -1; }
     }
+
+
 }
 
 
