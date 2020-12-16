@@ -16,10 +16,13 @@ public class FilteringApples {
                 new Apple(155, "green"), new Apple(120, "red"));
         List<Apple> heavyApples = filterApples(inventory, new AppleHeavyWeightPredicate());
         List<Apple> greenApples = filterApples(inventory, new AppleGreenColorPredicate());
+        List<Apple> redApples = filterApples(inventory, (Apple apple) -> "red".equals(apple.getColor()));
         System.out.println("result 1:");
         for (Apple apple: heavyApples) { System.out.println(apple.getWeight() + " " + apple.getColor()); }
         System.out.println("result 2");
         for (Apple apple: greenApples) { System.out.println(apple.getWeight() + " " + apple.getColor()); }
+        System.out.println("result 3");
+        for (Apple apple: redApples) { System.out.println(apple.getWeight() + " " + apple.getColor()); }
     }
 
     private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) {
