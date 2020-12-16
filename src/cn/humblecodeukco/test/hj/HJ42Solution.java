@@ -8,9 +8,9 @@ import java.io.InputStreamReader;
  * @Author lyr
  * @Date 2020/12/16 10:17
  * @Version 1.0
- * @Description HJ39
+ * @Description HJ42
  */
-public class HJ39Solution {
+public class HJ42Solution {
     public static void main (String[] args) throws IOException {
         String[] numstr = new String[]{null, "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
         String[] teens = new String[]{null, null, "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
