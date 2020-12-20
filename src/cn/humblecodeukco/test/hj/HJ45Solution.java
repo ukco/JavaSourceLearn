@@ -16,7 +16,7 @@ public class HJ45Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String value;
         while ((value = reader.readLine()) != null) {
-            int num = Integer.parseInt(value);
+        int num = Integer.parseInt(value);
             for (int index = 0; index < num; ++index) {
                 String name = reader.readLine();
                 char[] nameChars = name.toCharArray();
