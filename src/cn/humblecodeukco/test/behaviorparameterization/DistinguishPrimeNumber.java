@@ -1,5 +1,7 @@
 package cn.humblecodeukco.test.behaviorparameterization;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.IntStream;
@@ -14,7 +16,12 @@ import static java.util.stream.Collectors.partitioningBy;
  */
 public class DistinguishPrimeNumber {
     public static void main(String[] args) {
-
+        Map<Boolean, List<Integer>> map = new DistinguishPrimeNumber().partitionPrimesWithCustomCollector(50);
+        List<Integer> primeList = map.get(true);
+        for (Integer item : primeList) { System.out.println(item); }
+        System.out.println("=========================================");
+        List<Integer> unprimeList = map.get(false);
+        for (Integer item : unprimeList) { System.out.println(item); }
     }
 
     public boolean isPrime(int candidate) {
@@ -38,5 +45,40 @@ public class DistinguishPrimeNumber {
     public Map<Boolean, List<Integer>> partitionPrimes(int n) {
         return IntStream.rangeClosed(2, n).boxed()
                 .collect(partitioningBy(candidate -> isPrime2(candidate)));
+    }
+
+    /**
+     * 自定义Collector进行筛选
+     * @param n
+     * @return
+     */
+    public Map<Boolean, List<Integer>> partitionPrimesWithCustomCollector(int n) {
+        return IntStream.rangeClosed(2, n).boxed().collect(new PrimeNumbersCollector());
+    }
+
+    /**
+     * 使用collect方法的重载版本实现自定义收集器
+     * @param n
+     * @return
+     */
+    public Map<Boolean, List<Integer>> partitionPrimesWithCustomCollector2(int n) {
+        return IntStream.rangeClosed(2, n).boxed()
+                .collect(
+                        // 供应源
+                        () -> new HashMap<Boolean, List<Integer>>() {
+                            {
+                                put(true, new ArrayList<>());
+                                put(false, new ArrayList<>());
+                            }
+                        },
+                        // 累加器
+                        (acc, candidate) -> {
+                            acc.get(PrimeNumbersCollector.isPrime(acc.get(true), candidate)).add(candidate);
+                        },
+                        // 组合器
+                        (map1, map2) -> {
+                            map1.get(true).addAll(map2.get(true));
+                            map1.get(false).addAll(map2.get(false));
+                        });
     }
 }
