@@ -28,5 +28,6 @@ public class SumTest {
         System.out.println("Parallel sum done in: " + sumTest.measureSumPerf(ParallelStreams::parallelSum, 10_000_000) + "msecs");
         System.out.println("Sequential RangeClosed sum done in: " + sumTest.measureSumPerf(ParallelStreams::rangedSum, 10_000_000) + "msecs");
         System.out.println("Parallel RangedClosed sum done in: " + sumTest.measureSumPerf(ParallelStreams::parallelRangedSum, 10_000_000) + "msecs");
+        System.out.println("ForkJoin sum done in: " + sumTest.measureSumPerf(ForkJoinSumCalculator::forkJoinSum, 10_000_000) + "msecs");
     }
 }
