@@ -25,7 +25,7 @@ class TreeNode {
 // 方法一：递归
 class BinaryTreeDepthSolution {
     public int TreeDepth(TreeNode root) {
-        if (root == null) return 0;
+        if (root == null) { return 0; }
 
         int nLeft = TreeDepth(root.left);
         int nRight = TreeDepth(root.right);
