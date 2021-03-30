@@ -48,14 +48,4 @@ public class SearchMatrix {
         }
         return index;
     }
-
-    /**
-     * 找到最后一个小于等于target的索引位置
-     * @param array
-     * @param target
-     * @return
-     */
-    private int binarySearchLeastLess(int[] array, int target) {
-
-    }
 }
